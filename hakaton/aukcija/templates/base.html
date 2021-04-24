@@ -1,0 +1,88 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/assets/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="static/assets/base.css">
+  </head>
+  <body>
+   <header>
+    <div class="options">
+      <a href="{% url 'uizradi' %}" class="options-link link-active">Dodaj aukciju</a>
+      <a href="{% url 'uizradi' %}" class="options-link">Dodaj proizvod</a>
+      <a href="{% url 'uizradi' %}" class="options-link">Aktivne aukcije</a>
+      <a href="{% url 'uizradi' %}" class="options-link">Istorija</a>
+      <a href="{% url 'unos-korisnika' %}" class="options-link">Profil</a>
+      <a href="{% url 'odjava' %}" class="options-link">Odjavi se</a>
+    </div>
+  </header>
+  {% block naslov %}
+  <h3 class="title">Najnovije aukcije - Drvna industrija</h3>
+  {% endblock %}
+
+
+<main>
+  {% block sadrzaj %}
+
+    <div class="left">
+        <section>
+            <h2>CNC masina</h2>
+            <p>Hermle C600U Heidenhain iTNC430
+                proizvođač: Hermle
+                
+                oznaka mašine: C600U
+                
+                upravljanje na mašini: Heidenhain iTNC430</p>
+            <img class="section-img" src="static/img/cnc.jpg" alt="">
+           <a href="#" class="info-link">Detaljno...</a>
+           <button class="bid">Licitiraj</button>
+          </section>
+          <section>
+            <h2>LT70 DALJINSKI</h2>
+            <p>KOMPLETNA PILANSKA LINIJA <br>Integrisani sistem pilana za obradu rezanja u gotove daske je  profitabilniji sa minimalnim otpadom.</p>
+            <img class="section-img" src="static/img/lx.jpg" alt="">
+            <a href="#" class="info-link">Detaljno...</a>
+            <button class="bid">Licitiraj</button>
+          </section>
+          <section>
+            <h2>DASKA COLARICA</h2>
+            <p>Daska colarica suha dužine 3 i 2 m
+                1m3=800,00 kn</p>
+            <img class="section-img" src="static/img/daska.jpg" alt="">
+            <a href="#" class="info-link">Detaljno...</a>
+            <button class="bid">Licitiraj</button>
+          </section>
+          <section>
+            <h2>Grede</h2>
+            <p>Drvene grede proizvodimo iz zdrave i kvalitetne jele i smreke.</p>
+            <img class="section-img" src="static/img/grede.jpg" alt="">
+            <a href="#" class="info-link">Detaljno...</a>
+            <button class="bid">Licitiraj</button>
+          </section>
+    </div>
+    <!--div class="right">             
+          <section>
+            <h2>CNC masina</h2>
+            <img class="section-img profile" src="/img/cnc.jpg" />
+            <p>Hermle C600U Heidenhain iTNC430
+                proizvođač: Hermle
+                
+                oznaka mašine: C600U
+                
+                upravljanje na mašini: Heidenhain iTNC430</p>
+            
+            <button class="bid">Licitiraj</button>
+          </section>
+          
+    </div-->
+ {% endblock %}
+</main>
+
+  </body>
+</html>

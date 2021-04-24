@@ -1,0 +1,69 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+    text-decoration: none;
+}
+
+body {
+   /* background-image: url("/img/auction.jpg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; 
+    background-position: center;
+}
+
+.root {
+    display: block;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.root h1,h3{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.central {
+    display: flex;
+    justify-content: center;
+    /*align-items: center; */  
+    height: 100%;
+    gap: 15px;
+}
+
+.central button {
+    width: 300px;
+    height: 100px;
+    
+    background-color: #9AB2EA;
+    border: #9AB2EA 1px solid;
+    color: #6D5555;
+    font-size: 24px;
+    margin: 0px;
+    cursor: pointer;
+    
+}
+
+.central a {
+    color: #6D5555;
+}
+
+.title {
+    color: #6D5555;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+
+/******************** Registracija ***********************/
+
+.form-control {
+    padding: 0 20px 0 20px;
+}
+
+button {
+    background-color: #9AB2EA;
+    background: #9AB2EA;
+}

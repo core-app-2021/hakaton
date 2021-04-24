@@ -1,0 +1,125 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PK</title>
+    
+    <!-- MATERIAL DESIGN ICONIC FONT -->
+	<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+		
+    <link rel="stylesheet" href="static/assets/style.css">
+    <link rel="stylesheet" href="static/assets/main.css">
+</head>
+<body>
+    
+		<div class="wrapper" style="background-image: url('static/img/auction.jpg');">
+			<div class="inner">
+				<form method="POST" action="">
+					{% csrf_token %}
+					
+					<h3>Forma za registraciju preduzeća</h3>
+					<div class="form-group">
+						<div class="form-wrapper">
+							<label for="">Korisničko ime:</label>
+							<div class="form-holder">
+								<input type="text" class="form-control" name="username">
+							</div>
+						</div>
+						<div class="form-wrapper">
+							<label for="">Email:</label>
+							<div class="form-holder">
+								<input type="text" class="form-control" name = 'email'>
+								
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="form-wrapper">
+							<label for="">Lozinka:</label>
+							<div class="form-holder">
+								<input type="password" class="form-control" placeholder="********" name = 'password1'>
+								
+							</div>
+						</div>
+						<div class="form-wrapper">
+							<label for="">Potvrda lozinke:</label>
+							<div class="form-holder">
+								<input type="password" class="form-control" placeholder="********" name="password2">
+							</div>
+						</div>
+					</div>
+					<!--div class="form-group">
+						<div class="form-wrapper">
+							<label for="">Country:</label>
+							<div class="form-holder select">
+								<select name="" id="" class="form-control">
+									<option value="united states">United States</option>
+									<option value="united kingdom">United Kingdom</option>
+									<option value="viet nam">Viet Nam</option>
+								</select>
+								<i class="zmdi zmdi-pin"></i>
+							</div>
+						</div>
+						<div class="form-wrapper">
+							<label for="">Gender:</label>
+							<div class="form-holder select">
+								<select name="" id="" class="form-control">
+									<option value="male">Male</option>
+									<option value="femal">Female</option>
+									<option value="other">Other</option>
+								</select>
+								<i class="zmdi zmdi-face"></i>
+							</div>
+						</div>
+					</div-->
+					<!--<div class="form-group">
+						<div class="form-wrapper">
+							<label for="">Naziv preduzeća:</label>
+							<div class="form-holder">
+								<input type="text" class="form-control" name = 'naziv'>
+							</div>
+						</div>
+						<div class="form-wrapper">
+							<label for="">Adresa:</label>
+							<div class="form-holder">
+								<input type="text" class="form-control" name = 'adresa'>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="form-wrapper">
+							<label for="">JIB:</label>
+							<div class="form-holder">
+								<input type="text" class="form-control" name = 'jib'>
+							</div>
+						</div>
+						<div class="form-wrapper">
+							<label for="">PIB:</label>
+							<div class="form-holder">
+								<input type="text" class="form-control" name = 'pib'>
+							</div>
+						</div>
+					</div>-->
+					<div class="form-end">
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> Da li se slažete sa pravima korištenja?
+								<span class="checkmark"></span>
+							</label>
+						</div>
+						<div class="button-holder ">
+							<button type="submit">Registruj se</button>
+						</div>
+						
+					</div>
+				</form>
+				{{form.errors}}
+			</div>
+
+		</div>
+</body>
+</html>

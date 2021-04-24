@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PK</title>
+    
+    <link rel="stylesheet" href="static/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+		
+    <link rel="stylesheet" href="static/assets/style.css">
+    <link rel="stylesheet" href="static/assets/main.css">
+    <link rel="stylesheet" href="static/assets/index.css">
+</head>
+<body style="background-image: url('static/img/auction.jpg');">
+    <div class="root" >
+        <div class="welcome">
+            <h3>Dobrodošli</h3> 
+            <h3>Prva web platforma za objavu aukcija za mala i srednja preduzeca</h3>        
+        </div>  
+        <div class="central">
+            <button><a href="{% url 'prijava' %}">Prijava</a></button>
+            <button><a href="{% url 'registracija' %}">Registracija</a></button>
+        </div>
+    </div>
+</body>
+</html>

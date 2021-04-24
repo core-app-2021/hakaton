@@ -1,0 +1,166 @@
+/* Layout styles -----------------------------------*/
+@media (min-width: 620px) {
+    main {
+      column-count: 2;
+      column-gap: 20px;
+    }
+    .left {
+        column-count: 2;
+        column-gap: 20px;
+    }
+    section {
+      break-inside: avoid;
+    }
+  }
+  
+  @media (min-width: 960px) {
+    main {
+       column-count: 2;
+    }
+    .left {
+        column-count: 2;
+     }
+  }
+  
+  /* styles */
+  
+  :root {
+    --green: #e74c3c;   
+    --orange: #FFA644;
+    --red: #3498db;
+
+    --grey: #ecedee;
+    --yellow: #ea9f48;
+    --blue: #9AB2EA;
+    --brown: #6D5555;
+  }
+  
+  body {
+    background-color: var(--grey);
+    font-family: 'Ubuntu', sans-serif;
+    color: #34495e;
+  }
+  
+  main {    
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px 0;
+  }
+  
+  .title {
+    margin-top: 15px;
+    font-size: 2.6em;
+    text-align: center;
+    color: var(--brown);
+    margin-bottom: 5px
+  }
+ 
+  
+  h2 {
+    font-size: 1.4em;
+    padding: 10px;
+  }
+  
+  p {
+    margin-bottom: 1em;
+    padding: 0 10px;
+  }
+  
+  .info-link {
+    text-decoration: none;
+    color: var(--green);
+    padding: 10px;
+    display: block;
+  }
+
+  
+  
+  .options {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    border-top: 3px solid var(--blue);
+    border-radius: 3px;
+    background-color: white;
+  }
+  
+  .options-link {
+    text-decoration: none;
+    font-size: 0.8em;
+    color: var(--brown);
+
+  }
+
+  .options-link:hover {
+      color: var(--yellow);
+  }
+  
+  section {
+    border-top: 3px solid var(--blue);
+    border-radius: 3px;
+    background-color: white;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+
+  
+  .section-img {
+    display: block;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 230px;
+  }
+  
+  .bigtitle {
+    padding: 0;
+  }
+  
+  .bigtitle-title {
+    color: white;
+    background-color: var(--red);
+    margin-bottom: 10px;
+  }
+  
+  .bigbottom-link {
+    background-color: var(--green);
+    color: white;
+  }
+  
+  .profile {
+    width: 80%;
+    border-radius: 10%;
+    margin-bottom: 10px;
+  }
+
+  .bid {
+    width: 100px;
+    height: 40px;
+    background-color: var(--green);
+    margin-left: 5px;
+    margin-bottom: 5px;
+    border: none;
+  }
+
+  .bid:hover {
+    background-color: var(--yellow);
+    cursor: pointer;
+  }
+   
+  @media (min-width: 620px) {
+    .options-link {
+      font-size: 1.4em;
+    }
+  }
+
+  .work-progres {
+  display: flex;
+  justify-content: center;
+  padding-top: 200px;
+}

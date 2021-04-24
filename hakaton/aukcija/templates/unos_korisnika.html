@@ -1,0 +1,20 @@
+{% extends 'base.html'%}
+
+{% load static %}
+
+
+{% block sadrzaj %}
+
+	<div class="wrapper">
+	
+	<div class="inner">
+		<form method="POST">
+			{% csrf_token %}
+			<table>
+				{{form.as_table}}
+			</table>
+			<button type="submit">Sačuvaj</button>
+		</form>
+		</div>
+	</div>
+	{% endblock %}
